@@ -158,27 +158,15 @@ export default function ComingSoonPage() {
   if (isMobile) {
     return (
       <div className="lading-page bg-[#7b7a78] flex min-h-screen">
-        {/* Mobile Screen */}
-        <div className="wrap flex flex-col w-full">
-          <div className="bg-image flex-1 relative" style={{
-            backgroundImage: 'url(/assets/CS header.svg)',
-            backgroundColor: '#e2e2e2',
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            minHeight: '50vh'
-          }}>
-          </div>
-          <div className="bg-footer-image py-3 px-4 relative flex justify-center items-center" style={{
-            backgroundImage: 'url(/assets/m1.webp)',
-            backgroundColor: '#e2e2e2',
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            minHeight: '50vh'
-          }}>
-            <SubscribeNow />
-          </div>
+        {/* Mobile Screen - Single full background with centered container */}
+        <div className="mobile-bg-container relative w-full h-screen flex items-center justify-center" style={{
+          backgroundImage: 'url(/assets/m1.webp)',
+          backgroundColor: '#e2e2e2',
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }}>
+          <SubscribeNow />
         </div>
       </div>
     );
