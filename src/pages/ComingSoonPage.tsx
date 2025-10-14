@@ -168,7 +168,7 @@ export default function ComingSoonPage() {
         }}>
           {/* Header Hero Section - Overlay on marble background */}
           <div className="absolute top-0 left-0 w-full" style={{
-            backgroundImage: 'url(/assets/CS header.svg)',
+            backgroundImage: 'url(/assets/CS header.svg), url(/assets/coming soon-header.png)',
             backgroundColor: 'transparent',
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'contain',
