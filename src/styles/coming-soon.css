@@ -1,0 +1,250 @@
+/* Frontalslayer.com Coming Soon Page Styles */
+.lading-page {
+  height: 100vh;
+  position: relative;
+}
+
+.bg-desktop {
+  background-image: url('/assets/CS desktop-background.webp');
+  background-color: #e2e2e2;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* Alternative background sizing options */
+.bg-desktop.cover {
+  background-size: cover;
+}
+
+.bg-desktop.auto {
+  background-size: auto;
+}
+
+.bg-desktop.full {
+  background-size: 100% 100%;
+}
+
+/* Full image display option */
+.bg-desktop.full-image {
+  background-size: contain;
+  background-attachment: scroll;
+  min-height: auto;
+  height: 100vh;
+  background-position: center top;
+}
+
+/* Allow scrolling for full image */
+.bg-desktop.scrollable {
+  background-attachment: scroll;
+  min-height: auto;
+  height: auto;
+  padding-bottom: 50vh; /* Extra space to show full image */
+}
+
+.bg-image {
+  background-image: url('/assets/CS header.svg');
+  background-color: #e2e2e2;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-footer-image {
+  background-image: url('/assets/m1.webp');
+  background-color: #e2e2e2;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.blur-box {
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 12px;
+  border: 1.5px solid #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 310px; /* Desktop width - reduced by 10px */
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Mobile-specific blur-box width */
+@media (max-width: 640px) {
+  .blur-box {
+    width: 365px; /* Mobile width - current size */
+  }
+}
+
+/* Tablet-specific blur-box width */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .blur-box {
+    width: 240px !important; /* Tablet width - compact size */
+    max-width: 240px !important; /* Override max-width constraint */
+    padding: 4px !important; /* Increase padding for card height */
+    gap: 6px !important; /* Increase gap between elements */
+    backdrop-filter: blur(3px) !important; /* Reduce blur effect for more transparency */
+    -webkit-backdrop-filter: blur(3px) !important; /* WebKit support */
+    background-color: rgba(255, 255, 255, 0.05) !important; /* More transparent background */
+    transform: translateY(6px) !important; /* Move entire tablet card down 6px total */
+  }
+  
+  /* Auto-adjust content for tablet */
+  .blur-box h1:first-child,
+  .blur-box h2 {
+    font-size: 9px !important; /* Reduce text size for tablet */
+    line-height: 12px !important; /* Adjust line height */
+    padding: 0 4px !important; /* Add small padding to prevent overflow */
+  }
+  
+  /* Move all content down 4px and allow line wrapping for red text on tablet */
+  .blur-box h1:first-child {
+    margin-top: 4px !important; /* Push all content down 4px */
+    white-space: normal !important; /* Override whitespace-nowrap for tablet */
+  }
+  
+  /* Remove line break between "awaits!" and "3d" on tablet */
+  .blur-box h1:first-child br {
+    display: none !important; /* Hide the line break on tablet */
+  }
+  
+  .blur-box h1.font-covered {
+    font-size: 20px !important; /* Reduce "SUBSCRIBE NOW!" text */
+  }
+  
+  .blur-box input[type="email"] {
+    width: calc(100% - 16px) !important; /* Reduce input width */
+    padding: 4px 8px !important; /* Reduce input padding - smaller height */
+    font-size: 10px !important; /* Reduce input text size by 2px */
+    height: 25px !important; /* Reduce input box height */
+  }
+  
+  .blur-box button {
+    padding: 8px 16px !important; /* Reduce button padding */
+    font-size: 12px !important; /* Reduce button text size */
+  }
+  
+  .blur-box input[type="submit"] {
+    font-size: 9px !important; /* Increase "SIGN UP" text size by 1px for tablet */
+    margin-top: -6px !important; /* Move "SIGN UP" text upwards by 6px */
+  }
+}
+
+/* Mobile-specific text size increase */
+@media (max-width: 767px) {
+  .blur-box h1:first-child,
+  .blur-box h2 {
+    font-size: 11px !important; /* 10px + 1px for mobile only */
+  }
+}
+
+/* Desktop-specific email input width reduction */
+@media (min-width: 1200px) {
+  .blur-box input[type="email"] {
+    width: calc(100% - 20px) !important; /* Reduce by 20px while keeping centered */
+  }
+}
+
+/* Tablet background override - Force background size */
+.tablet-bg-override {
+  background-size: 0px auto !important;
+  background-position: center top !important;
+  background-repeat: no-repeat !important;
+}
+
+.tablet-bg-force {
+  background-image: url('/assets/CS desktop-background.webp');
+  background-color: #e2e2e2;
+  background-size: cover;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+
+/* Force tablet card positioning */
+.tablet-card-position {
+  left: calc(50% - 447px) !important;
+  bottom: 162px !important;
+  position: absolute !important;
+}
+
+.wrapWidth {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Loading Screen Styles */
+.loading-container {
+  width: 405px !important;
+  height: 405px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-grow: 0;
+  position: relative;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  will-change: auto;
+  min-width: 405px !important;
+  max-width: 405px !important;
+  min-height: 405px !important;
+  max-height: 405px !important;
+  contain: layout style paint !important;
+  isolation: isolate !important;
+}
+
+.loading-container img {
+  width: 405px !important;
+  height: 405px !important;
+  object-fit: contain !important;
+  display: block !important;
+  max-width: 405px !important;
+  max-height: 405px !important;
+  min-width: 405px !important;
+  min-height: 405px !important;
+  transform: translateZ(0) !important;
+  backface-visibility: hidden !important;
+  will-change: auto !important;
+  image-rendering: auto !important;
+  image-orientation: none !important;
+  image-rendering: pixelated !important;
+  image-rendering: -moz-crisp-edges !important;
+  image-rendering: crisp-edges !important;
+  transform-origin: 0 0 !important;
+  scale: 1 !important;
+  rotate: 0deg !important;
+  translate: 0 0 !important;
+}
+
+/* Font Styles */
+.font-covered {
+  font-family: 'Covered By Your Grace', 'Covered By Your Grace Preload', cursive !important;
+  font-weight: normal !important;
+  font-style: normal !important;
+  font-display: block !important;
+  font-synthesis: none !important;
+}
+
+
+
+
+
+
+
+
+
