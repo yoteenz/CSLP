@@ -158,32 +158,28 @@ export default function ComingSoonPage() {
   if (isMobile) {
     return (
       <div className="lading-page bg-[#7b7a78] flex min-h-screen">
-        {/* Mobile Screen - Single container with marble background */}
-        <div className="mobile-container relative w-full h-screen" style={{
-          backgroundImage: 'url(/assets/m1.webp)',
-          backgroundColor: '#e2e2e2',
-          backgroundRepeat: 'no-repeat',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center'
-        }}>
-          {/* Header Hero Section - Overlay on marble background */}
-          <div className="absolute top-0 left-0 w-full" style={{
+        {/* Mobile Screen */}
+        <div className="wrap flex flex-col w-full">
+          {/* Header Hero Section */}
+          <div className="bg-image flex-1 relative" style={{
             backgroundImage: 'url(/assets/CS header.svg), url(/assets/coming soon-header.png)',
-            backgroundColor: 'transparent',
+            backgroundColor: '#e2e2e2',
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'contain',
             backgroundPosition: 'center top',
-            height: '70vh',
-            minHeight: '450px',
-            zIndex: 2
+            height: '60vh',
+            minHeight: '400px'
           }}>
           </div>
-          {/* Container positioned on marble background */}
-          <div className="absolute left-0 w-full flex justify-center items-center" style={{
-            top: 'calc(70vh + 20px)',
-            height: 'calc(30vh - 40px)',
-            minHeight: '120px',
-            zIndex: 1,
+          {/* Footer Section with Container */}
+          <div className="bg-footer-image py-3 px-4 relative flex justify-center items-center" style={{
+            backgroundImage: 'url(/assets/m1.webp)',
+            backgroundColor: '#e2e2e2',
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            height: '40vh',
+            minHeight: '250px',
             padding: '10px'
           }}>
             <SubscribeNow />
