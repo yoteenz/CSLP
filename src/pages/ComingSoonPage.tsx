@@ -172,7 +172,7 @@ export default function ComingSoonPage() {
           }}>
           </div>
           {/* Footer Section with Container */}
-          <div className="bg-footer-image py-3 px-4 relative flex justify-center items-center" style={{
+          <div className="bg-footer-image relative flex justify-center items-center" style={{
             backgroundImage: 'url(/assets/m1.webp)',
             backgroundColor: '#e2e2e2',
             backgroundRepeat: 'no-repeat',
@@ -182,7 +182,9 @@ export default function ComingSoonPage() {
             minHeight: '250px',
             padding: '10px'
           }}>
-            <SubscribeNow />
+            <div className="w-full flex justify-center">
+              <SubscribeNow />
+            </div>
           </div>
         </div>
       </div>
