@@ -158,33 +158,34 @@ export default function ComingSoonPage() {
   if (isMobile) {
     return (
       <div className="lading-page bg-[#7b7a78] flex min-h-screen">
-        {/* Mobile Screen */}
-        <div className="wrap flex flex-col w-full">
-          {/* Header Hero Section */}
-          <div className="bg-image relative" style={{
+        {/* Mobile Screen - Single container with marble background */}
+        <div className="mobile-container relative w-full h-screen" style={{
+          backgroundImage: 'url(/assets/m1.webp)',
+          backgroundColor: '#e2e2e2',
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }}>
+          {/* Header Hero Section - Overlay on marble background */}
+          <div className="bg-image absolute top-0 left-0 w-full" style={{
             backgroundImage: 'url(/assets/CS header.svg)',
-            backgroundColor: '#e2e2e2',
+            backgroundColor: 'transparent',
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'contain',
             backgroundPosition: 'center top',
             height: '60vh',
-            minHeight: '400px'
+            minHeight: '400px',
+            zIndex: 2
           }}>
           </div>
-          {/* Footer Section with Container */}
-          <div className="bg-footer-image relative flex justify-center items-center" style={{
-            backgroundImage: 'url(/assets/m1.webp)',
-            backgroundColor: '#e2e2e2',
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            height: '35vh',
+          {/* Container positioned on marble background */}
+          <div className="absolute bottom-0 left-0 w-full flex justify-center items-center" style={{
+            height: '40vh',
             minHeight: '200px',
+            zIndex: 1,
             padding: '5px'
           }}>
-            <div className="w-full flex justify-center">
-              <SubscribeNow />
-            </div>
+            <SubscribeNow />
           </div>
         </div>
       </div>
