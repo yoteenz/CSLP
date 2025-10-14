@@ -26,6 +26,26 @@ export default function ComingSoonPage() {
   }, []);
 
   useEffect(() => {
+    // Preload critical assets
+    const preloadAssets = () => {
+      const assets = [
+        '/assets/CS header.svg',
+        '/assets/CS desktop-background.webp',
+        '/assets/m1.webp',
+        '/assets/load-screen.gif'
+      ];
+      
+      assets.forEach(asset => {
+        const img = new Image();
+        img.src = asset;
+        img.onerror = () => {
+          console.warn(`Failed to preload asset: ${asset}`);
+        };
+      });
+    };
+
+    preloadAssets();
+
     // Show loading screen for 6 seconds minimum, then check assets
     const minTimer = setTimeout(() => {
       setLoading(false);
