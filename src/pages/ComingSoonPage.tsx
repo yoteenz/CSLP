@@ -167,7 +167,7 @@ export default function ComingSoonPage() {
           backgroundPosition: 'center'
         }}>
           {/* Header Hero Section - Overlay on marble background */}
-          <div className="bg-image absolute top-0 left-0 w-full" style={{
+          <div className="absolute top-0 left-0 w-full" style={{
             backgroundImage: 'url(/assets/CS header.svg)',
             backgroundColor: 'transparent',
             backgroundRepeat: 'no-repeat',
@@ -180,11 +180,11 @@ export default function ComingSoonPage() {
           </div>
           {/* Container positioned on marble background */}
           <div className="absolute left-0 w-full flex justify-center items-center" style={{
-            top: '70vh',
-            height: '30vh',
-            minHeight: '150px',
+            top: 'calc(70vh + 20px)',
+            height: 'calc(30vh - 40px)',
+            minHeight: '120px',
             zIndex: 1,
-            padding: '2px'
+            padding: '10px'
           }}>
             <SubscribeNow />
           </div>
@@ -210,7 +210,12 @@ export default function ComingSoonPage() {
         <div className="tablet-bg-force" style={{
           width: '100vw',
           height: '100vh',
-          position: 'relative'
+          position: 'relative',
+          backgroundImage: 'url(/assets/tablet header.webp)',
+          backgroundColor: '#e2e2e2',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
         }}>
           <div className="tablet-card-position" style={{
             position: 'absolute',
