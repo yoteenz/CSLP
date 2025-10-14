@@ -163,7 +163,7 @@ export default function ComingSoonPage() {
           backgroundImage: 'url(/assets/m1.webp)',
           backgroundColor: '#e2e2e2',
           backgroundRepeat: 'no-repeat',
-          backgroundSize: 'contain',
+          backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}>
           {/* Header Hero Section - Overlay on marble background */}
