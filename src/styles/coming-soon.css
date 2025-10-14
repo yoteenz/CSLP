@@ -98,6 +98,31 @@
   justify-content: center;
 }
 
+/* Mobile layout adjustments */
+@media (max-width: 767px) {
+  .lading-page {
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .wrap {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .bg-image {
+    flex-shrink: 0;
+  }
+  
+  .bg-footer-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 /* Tablet-specific blur-box width */
 @media (min-width: 768px) and (max-width: 1199px) {
   .blur-box {
