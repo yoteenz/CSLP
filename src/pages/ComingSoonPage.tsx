@@ -167,8 +167,8 @@ export default function ComingSoonPage() {
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            height: '50vh',
-            minHeight: '300px'
+            height: '60vh',
+            minHeight: '400px'
           }}>
           </div>
           {/* Footer Section with Container */}
@@ -178,9 +178,9 @@ export default function ComingSoonPage() {
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            height: '50vh',
-            minHeight: '300px',
-            padding: '20px'
+            height: '40vh',
+            minHeight: '250px',
+            padding: '10px'
           }}>
             <div className="w-full flex justify-center">
               <SubscribeNow />

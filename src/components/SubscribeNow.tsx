@@ -43,7 +43,11 @@ const SubscribeNow: React.FC<SubscribeNowProps> = ({ className = "" }) => {
           value={email}
           type="email"
           className="text-[#909090] placeholder-[#909090] text-xs uppercase border-[1.4px] border-black p-1 sm:w-full w-[88%] !rounded-none focus:border-[#EB1C24] focus:outline-none"
-          style={{fontFamily: 'Futura PT Book, sans-serif', fontWeight: 'normal'}}
+          style={{
+            fontFamily: 'Futura PT Book, sans-serif', 
+            fontWeight: 'normal',
+            fontStyle: 'normal'
+          }}
           placeholder="EMAIL ADDRESS*"
           onChange={(e) => {
             setEmail(e.target.value);
