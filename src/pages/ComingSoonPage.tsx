@@ -163,7 +163,7 @@ export default function ComingSoonPage() {
           backgroundImage: 'url(/assets/m1.webp)',
           backgroundColor: '#e2e2e2',
           backgroundRepeat: 'no-repeat',
-          backgroundSize: 'cover',
+          backgroundSize: 'contain',
           backgroundPosition: 'center'
         }}>
           {/* Header Hero Section - Overlay on marble background */}
@@ -173,17 +173,17 @@ export default function ComingSoonPage() {
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'contain',
             backgroundPosition: 'center top',
-            height: '60vh',
-            minHeight: '400px',
+            height: '70vh',
+            minHeight: '450px',
             zIndex: 2
           }}>
           </div>
           {/* Container positioned on marble background */}
           <div className="absolute bottom-0 left-0 w-full flex justify-center items-center" style={{
-            height: '40vh',
-            minHeight: '200px',
+            height: '30vh',
+            minHeight: '150px',
             zIndex: 1,
-            padding: '5px'
+            padding: '2px'
           }}>
             <SubscribeNow />
           </div>
