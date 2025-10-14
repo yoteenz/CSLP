@@ -165,8 +165,8 @@ export default function ComingSoonPage() {
             backgroundImage: 'url(/assets/CS header.svg)',
             backgroundColor: '#e2e2e2',
             backgroundRepeat: 'no-repeat',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
+            backgroundSize: 'contain',
+            backgroundPosition: 'center top',
             height: '60vh',
             minHeight: '400px'
           }}>
@@ -178,9 +178,9 @@ export default function ComingSoonPage() {
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            height: '40vh',
-            minHeight: '250px',
-            padding: '10px'
+            height: '35vh',
+            minHeight: '200px',
+            padding: '5px'
           }}>
             <div className="w-full flex justify-center">
               <SubscribeNow />
