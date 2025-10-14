@@ -23,18 +23,18 @@ const SubscribeNow: React.FC<SubscribeNowProps> = ({ className = "" }) => {
 
   return (
     <div className={`blur-box ${className}`}>
-      <h1 className="text-center text-[#EB1C24] text-[10px] leading-[14px] whitespace-nowrap">
+      <h1 className="text-center text-[#EB1C24] text-[10px] leading-[14px] whitespace-nowrap" style={{fontFamily: 'Futura PT Medium, sans-serif', fontWeight: '500'}}>
         A WHOLE NEW VIRTUAL SHOPPING EXPERIENCE AWAITS! <br />
         3D HAIR SALON OFFERING RAW HUMAN HAIR EXTENSIONS.
       </h1>
-      <h1 className="text-[25px] font-covered sm:text-white text-[#909090] my-[3px] -mt-[2px] text-center">
+      <h1 className="text-[25px] font-covered sm:text-white text-[#909090] my-[3px] -mt-[2px] text-center" style={{fontFamily: 'Covered By Your Grace, cursive', fontWeight: 'normal'}}>
         SUBSCRIBE NOW!
       </h1>
       <form
         onSubmit={handleEmailSubscriptionFunction}
         className="flex flex-col gap-3 justify-center items-center w-full"
       >
-        <h2 className="text-[10px] text-center text-black leading-[14px] -mt-[5px]">
+        <h2 className="text-[10px] text-center text-black leading-[14px] -mt-[5px]" style={{fontFamily: 'Futura PT Medium, sans-serif', fontWeight: '500'}}>
           STAY CONNECTED & BE FIRST IN LINE TO RECEIVE UPDATES, EXCLUSIVE PERKS
           + ACCESS TO MEMBERS ONLY CONTENT.
         </h2>
@@ -43,6 +43,7 @@ const SubscribeNow: React.FC<SubscribeNowProps> = ({ className = "" }) => {
           value={email}
           type="email"
           className="text-[#909090] placeholder-[#909090] text-xs uppercase border-[1.4px] border-black p-1 sm:w-full w-[88%] !rounded-none focus:border-[#EB1C24] focus:outline-none"
+          style={{fontFamily: 'Futura PT Book, sans-serif', fontWeight: 'normal'}}
           placeholder="EMAIL ADDRESS*"
           onChange={(e) => {
             setEmail(e.target.value);
@@ -54,10 +55,11 @@ const SubscribeNow: React.FC<SubscribeNowProps> = ({ className = "" }) => {
             <input
               type="submit"
               className="text-[#EB1C24] uppercase text-xs bg-transparent border-none cursor-pointer"
+              style={{fontFamily: 'Futura PT Medium, sans-serif', fontWeight: '500'}}
               value={isLoading ? "Processing..." : "SIGN UP"}
             />
           ) : (
-            <label className="text-[#EB1C24] uppercase text-xs">
+            <label className="text-[#EB1C24] uppercase text-xs" style={{fontFamily: 'Futura PT Medium, sans-serif', fontWeight: '500'}}>
               {apiMessage}
             </label>
           )}

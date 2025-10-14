@@ -16,18 +16,34 @@
     <link rel="preload" href="/assets/Futura PT Book.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="preload" href="/assets/Futura PT Medium.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="preload" href="/assets/fonnts.com-Futura_PT_Demi.otf" as="font" type="font/otf" crossorigin>
+    
+    <!-- Force font loading -->
+    <style>
+      @font-face {
+        font-family: 'Futura PT Book';
+        src: url('/assets/Futura PT Book.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: 'Futura PT Medium';
+        src: url('/assets/Futura PT Medium.ttf') format('truetype');
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: 'Futura PT Demi';
+        src: url('/assets/fonnts.com-Futura_PT_Demi.otf') format('opentype');
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
-
-
-
-
-
-
-
-
-
