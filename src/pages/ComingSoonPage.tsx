@@ -179,7 +179,8 @@ export default function ComingSoonPage() {
           }}>
           </div>
           {/* Container positioned on marble background */}
-          <div className="absolute bottom-0 left-0 w-full flex justify-center items-center" style={{
+          <div className="absolute left-0 w-full flex justify-center items-center" style={{
+            top: '70vh',
             height: '30vh',
             minHeight: '150px',
             zIndex: 1,
