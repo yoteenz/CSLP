@@ -35,7 +35,7 @@ const SubscribeNow: React.FC<SubscribeNowProps> = ({ className = "" }) => {
         className="flex flex-col gap-3 justify-center items-center w-full"
       >
         <h2 className="text-[10px] text-center text-black leading-[14px] -mt-[5px]" style={{fontFamily: 'Futura PT Demi, sans-serif', fontWeight: '600'}}>
-          STAY CONNECTED & BE FIRST IN LINE TO RECEIVE UPDATES, EXCLUSIVE PERKS
+          STAY CONNECTED & BE FIRST IN LINE TO RECEIVE UPDATES,<br />EXCLUSIVE PERKS
           + ACCESS TO MEMBERS ONLY CONTENT.
         </h2>
         <input
