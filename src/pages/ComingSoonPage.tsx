@@ -159,9 +159,9 @@ export default function ComingSoonPage() {
     return (
       <div className="lading-page bg-[#7b7a78] flex min-h-screen">
         {/* Mobile Screen */}
-        <div className="wrap flex flex-col w-full">
+        <div className="wrap flex flex-col w-full relative">
           {/* Header Hero Section */}
-          <div className="bg-image flex-1 relative" style={{
+          <div className="bg-image relative z-10" style={{
             backgroundImage: 'url(/assets/CS header.svg), url(/assets/coming soon-header.png)',
             backgroundColor: '#e2e2e2',
             backgroundRepeat: 'no-repeat',
@@ -172,7 +172,7 @@ export default function ComingSoonPage() {
           }}>
           </div>
           {/* Footer Section with Container */}
-          <div className="bg-footer-image relative flex justify-center items-center" style={{
+          <div className="bg-footer-image relative z-20 flex justify-center items-center" style={{
             backgroundImage: 'url(/assets/m1.webp)',
             backgroundColor: '#e2e2e2',
             backgroundRepeat: 'no-repeat',

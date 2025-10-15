@@ -113,11 +113,7 @@
   }
   
   .bg-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 2;
+    /* Remove conflicting absolute positioning - let inline styles control layout */
   }
   
   /* Mobile container positioning */
