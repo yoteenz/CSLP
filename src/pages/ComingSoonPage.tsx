@@ -167,7 +167,7 @@ export default function ComingSoonPage() {
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'contain',
             backgroundPosition: 'center top',
-            height: '60vh',
+            height: '70vh',
             minHeight: '400px',
             zIndex: 1
           }}>
@@ -179,7 +179,7 @@ export default function ComingSoonPage() {
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            height: '40vh',
+            height: '30vh',
             minHeight: '250px',
             padding: '10px',
             zIndex: 2
