@@ -282,25 +282,25 @@
 /* Ensure proper font weights are applied to all text elements */
 .blur-box h1:first-child,
 .blur-box h2 {
-  font-family: 'Futura PT Medium', sans-serif !important;
-  font-weight: 500 !important;
+  font-family: 'Futura PT Demi', sans-serif !important;
+  font-weight: 600 !important;
 }
 
 .blur-box input[type="email"] {
-  font-family: 'Futura PT Medium', sans-serif !important;
-  font-weight: 500 !important;
+  font-family: 'Futura PT Demi', sans-serif !important;
+  font-weight: 600 !important;
 }
 
 .blur-box input[type="email"]::placeholder {
-  font-family: 'Futura PT Medium', sans-serif !important;
-  font-weight: 500 !important;
+  font-family: 'Futura PT Demi', sans-serif !important;
+  font-weight: 600 !important;
   font-style: normal !important;
 }
 
 .blur-box input[type="submit"],
 .blur-box label {
-  font-family: 'Futura PT Medium', sans-serif !important;
-  font-weight: 500 !important;
+  font-family: 'Futura PT Demi', sans-serif !important;
+  font-weight: 600 !important;
 }
 
 
