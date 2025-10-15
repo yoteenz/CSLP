@@ -165,7 +165,7 @@ export default function ComingSoonPage() {
             backgroundImage: 'url(/assets/CS header.svg), url(/assets/coming soon-header.png)',
             backgroundColor: 'transparent',
             backgroundRepeat: 'no-repeat',
-            backgroundSize: 'contain',
+            backgroundSize: 'cover',
             backgroundPosition: 'center top',
             height: '70vh',
             minHeight: '400px',
