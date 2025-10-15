@@ -161,18 +161,19 @@ export default function ComingSoonPage() {
         {/* Mobile Screen */}
         <div className="wrap flex flex-col w-full relative">
           {/* Header Hero Section */}
-          <div className="bg-image relative z-10" style={{
+          <div className="bg-image relative" style={{
             backgroundImage: 'url(/assets/CS header.svg), url(/assets/coming soon-header.png)',
-            backgroundColor: '#e2e2e2',
+            backgroundColor: 'transparent',
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'contain',
             backgroundPosition: 'center top',
             height: '60vh',
-            minHeight: '400px'
+            minHeight: '400px',
+            zIndex: 1
           }}>
           </div>
           {/* Footer Section with Container */}
-          <div className="bg-footer-image relative z-20 flex justify-center items-center" style={{
+          <div className="bg-footer-image relative flex justify-center items-center" style={{
             backgroundImage: 'url(/assets/m1.webp)',
             backgroundColor: '#e2e2e2',
             backgroundRepeat: 'no-repeat',
@@ -180,7 +181,8 @@ export default function ComingSoonPage() {
             backgroundPosition: 'center',
             height: '40vh',
             minHeight: '250px',
-            padding: '10px'
+            padding: '10px',
+            zIndex: 2
           }}>
             <div className="w-full flex justify-center">
               <SubscribeNow />
