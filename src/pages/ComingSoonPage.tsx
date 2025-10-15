@@ -175,7 +175,7 @@ export default function ComingSoonPage() {
           {/* Footer Section with Container */}
           <div className="bg-footer-image relative flex justify-center items-center" style={{
             backgroundImage: 'url(/assets/m1.webp)',
-            backgroundColor: '#e2e2e2',
+            backgroundColor: 'transparent',
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
