@@ -206,11 +206,7 @@
   .blur-box input[type="email"] {
     margin-top: 4px !important;
     margin-bottom: 4px !important;
-  }
-  
-  /* Mobile-specific hero image positioning */
-  .bg-image {
-    transform: translateY(-10px) !important;
+    font-size: 13px !important; /* 12px + 1px for mobile only */
   }
 }
 
