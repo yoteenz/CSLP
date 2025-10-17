@@ -154,7 +154,7 @@
   
   /* Move all content down 4px and allow line wrapping for red text on tablet */
   .blur-box h1:first-child {
-    margin-top: 4px !important; /* Push all content down 4px */
+    margin-top: 9px !important; /* Increase spacing above by 5px (was 4px) */
     white-space: normal !important; /* Override whitespace-nowrap for tablet */
   }
   
@@ -189,6 +189,7 @@
   .blur-box input[type="submit"] {
     font-size: 8px !important; /* Decrease "SIGN UP" text size by 1px (was 9px) */
     margin-top: -6px !important; /* Move "SIGN UP" text upwards by 6px */
+    margin-bottom: 5px !important; /* Add spacing below SIGN UP text */
   }
   
   /* Tablet-specific border size reduction */
