@@ -241,7 +241,7 @@
 /* Force tablet card positioning */
 .tablet-card-position {
   left: calc(50% - 447px - 20px) !important;
-  bottom: 162px !important;
+  bottom: 172px !important;
   position: absolute !important;
 }
 
