@@ -240,7 +240,7 @@
 
 /* Force tablet card positioning */
 .tablet-card-position {
-  left: calc(50% - 447px - 20px) !important;
+  left: calc(50% - 447px - 15px) !important;
   bottom: 172px !important;
   position: absolute !important;
 }
