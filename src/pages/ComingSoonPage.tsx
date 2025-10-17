@@ -237,11 +237,11 @@ export default function ComingSoonPage() {
       <div className="bg-desktop flex flex-col relative" style={{
         backgroundImage: 'url(/assets/CS desktop-background.webp)',
         backgroundColor: '#e2e2e2',
-        backgroundSize: 'contain',
-        backgroundPosition: 'center top',
+        backgroundSize: '100% 100%',
+        backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         minHeight: '100vh',
-        height: 'auto'
+        height: '100vh'
       }}>
         <div className="wrapWidth flex h-full">
         </div>
