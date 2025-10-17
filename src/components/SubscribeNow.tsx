@@ -23,7 +23,7 @@ const SubscribeNow: React.FC<SubscribeNowProps> = ({ className = "" }) => {
 
   return (
     <div className={`blur-box ${className}`}>
-      <h1 className="text-center text-[#EB1C24] text-[10px] leading-[14px] whitespace-nowrap" style={{fontFamily: 'Futura PT Demi, sans-serif', fontWeight: '600'}}>
+      <h1 className="text-center text-[#EB1C24] text-[10px] leading-[14px]" style={{fontFamily: 'Futura PT Demi, sans-serif', fontWeight: '600'}}>
         A WHOLE NEW VIRTUAL SHOPPING EXPERIENCE AWAITS! <br />
         3D HAIR SALON OFFERING RAW HUMAN HAIR EXTENSIONS.
       </h1>
