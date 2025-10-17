@@ -162,15 +162,13 @@ export default function ComingSoonPage() {
         <div className="wrap flex flex-col w-full relative">
           {/* Header Hero Section */}
           <div className="bg-image relative" style={{
-            backgroundImage: 'url(/assets/mobile-coming.png)',
+            backgroundImage: 'url(/assets/CS header.svg), url(/assets/coming soon-header.png)',
             backgroundColor: 'transparent',
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
             backgroundPosition: 'center top',
             height: '70vh',
             minHeight: '400px',
-            transform: 'translateY(-25px)',
-            marginBottom: '-25px',
             zIndex: 1
           }}>
           </div>
@@ -181,7 +179,7 @@ export default function ComingSoonPage() {
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            height: '30vh',
+            height: 'calc(100vh - 70vh)',
             minHeight: '250px',
             padding: '10px',
             zIndex: 2
