@@ -4,6 +4,32 @@
   "framework": "vite",
   "headers": [
     {
+      "source": "/favicon.ico",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "image/x-icon"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
+      ]
+    },
+    {
+      "source": "/favicon.png",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "image/png"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
+      ]
+    },
+    {
       "source": "/assets/(.*)",
       "headers": [
         {
@@ -32,7 +58,7 @@
   ],
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/((?!favicon|assets|_next).*)",
       "destination": "/index.html"
     }
   ]
