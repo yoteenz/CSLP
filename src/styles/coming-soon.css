@@ -146,6 +146,7 @@
     font-size: 9px !important; /* Restore tablet text size */
     line-height: 12px !important; /* Restore line height */
     padding: 0 4px !important; /* Add small padding to prevent overflow */
+    max-width: 200px !important; /* Force text to wrap more aggressively on 2 lines */
   }
   
   /* Move all content down 4px and allow line wrapping for red text on tablet */
