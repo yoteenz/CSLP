@@ -170,6 +170,8 @@
   
   .blur-box h1.font-covered {
     font-size: 20px !important; /* Reduce "SUBSCRIBE NOW!" text */
+    margin-top: 8px !important; /* Increase spacing above by 5px (was 3px) */
+    margin-bottom: 8px !important; /* Increase spacing below by 5px (was 3px) */
   }
   
   .blur-box input[type="email"] {
