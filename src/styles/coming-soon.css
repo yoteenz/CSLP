@@ -163,6 +163,11 @@
     display: none !important; /* Hide the line break on tablet */
   }
   
+  /* Remove line break after "updates," in black text on tablet */
+  .blur-box h2 br {
+    display: none !important; /* Hide the line break after "updates," on tablet */
+  }
+  
   .blur-box h1.font-covered {
     font-size: 20px !important; /* Reduce "SUBSCRIBE NOW!" text */
   }
