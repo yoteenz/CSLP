@@ -169,7 +169,7 @@
   }
   
   .blur-box h1.font-covered {
-    font-size: 20px !important; /* Reduce "SUBSCRIBE NOW!" text */
+    font-size: 19px !important; /* Decrease "SUBSCRIBE NOW!" text by 1px (was 20px) */
     margin-top: 8px !important; /* Increase spacing above by 5px (was 3px) */
     margin-bottom: 8px !important; /* Increase spacing below by 5px (was 3px) */
   }
