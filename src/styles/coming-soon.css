@@ -147,6 +147,9 @@
     line-height: 12px !important; /* Restore line height */
     padding: 0 4px !important; /* Add small padding to prevent overflow */
     max-width: 230px !important; /* Further increase max-width to allow text to spread wider on 2 lines */
+    white-space: normal !important; /* Override any whitespace-nowrap */
+    word-wrap: break-word !important; /* Allow word wrapping */
+    overflow-wrap: break-word !important; /* Modern word wrapping */
   }
   
   /* Move all content down 4px and allow line wrapping for red text on tablet */
