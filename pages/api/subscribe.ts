@@ -18,6 +18,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     const MAILCHIMP_SERVER_PREFIX = process.env.MAILCHIMP_SERVER_PREFIX;
 
     if (!MAILCHIMP_API_KEY || !MAILCHIMP_LIST_ID || !MAILCHIMP_SERVER_PREFIX) {
+      console.error('Missing environment variables:', {
+        MAILCHIMP_API_KEY: !!MAILCHIMP_API_KEY,
+        MAILCHIMP_LIST_ID: !!MAILCHIMP_LIST_ID,
+        MAILCHIMP_SERVER_PREFIX: !!MAILCHIMP_SERVER_PREFIX
+      });
       return res.status(500).json({ message: 'Server configuration error' });
     }
 
@@ -48,8 +53,15 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       return res.status(200).json({ message: 'Successfully subscribed' });
     } else {
       const errorData = await response.json();
-      console.error('Mailchimp error:', errorData);
-      return res.status(400).json({ message: 'Subscription failed' });
+      console.error('Mailchimp error:', {
+        status: response.status,
+        statusText: response.statusText,
+        error: errorData
+      });
+      return res.status(400).json({ 
+        message: 'Subscription failed',
+        error: errorData.title || 'Unknown error'
+      });
     }
   } catch (error) {
     console.error('Subscription error:', error);
