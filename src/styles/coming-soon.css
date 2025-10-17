@@ -208,6 +208,12 @@
     margin-bottom: 4px !important;
     font-size: 13px !important; /* 12px + 1px for mobile only */
   }
+  
+  /* Mobile-specific sign up button text size */
+  .blur-box input[type="submit"],
+  .blur-box label {
+    font-size: 13px !important; /* 12px + 1px for mobile only */
+  }
 }
 
 /* Desktop-specific email input width reduction */
