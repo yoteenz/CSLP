@@ -163,18 +163,9 @@
     display: none !important; /* Hide the line break on tablet */
   }
   
-  /* Remove line break after "updates," in black text on tablet and add space */
+  /* Remove line break after "updates," in black text on tablet */
   .blur-box h2 br {
     display: none !important; /* Hide the line break after "updates," on tablet */
-  }
-  
-  /* Add space after "updates," for tablet design */
-  .blur-box h2 {
-    white-space: pre-line !important; /* Allow line breaks but preserve spaces */
-  }
-  
-  .blur-box h2::before {
-    content: "" !important; /* Ensure proper spacing */
   }
   
   .blur-box h1.font-covered {
@@ -186,7 +177,7 @@
   .blur-box input[type="email"] {
     width: calc(100% - 16px) !important; /* Reduce input width */
     padding: 4px 8px !important; /* Reduce input padding - smaller height */
-    font-size: 10px !important; /* Reduce input text size by 2px */
+    font-size: 9px !important; /* Decrease input text size by 1px (was 10px) */
     height: 25px !important; /* Reduce input box height */
   }
   
@@ -196,7 +187,7 @@
   }
   
   .blur-box input[type="submit"] {
-    font-size: 9px !important; /* Increase "SIGN UP" text size by 1px for tablet */
+    font-size: 8px !important; /* Decrease "SIGN UP" text size by 1px (was 9px) */
     margin-top: -6px !important; /* Move "SIGN UP" text upwards by 6px */
   }
   
