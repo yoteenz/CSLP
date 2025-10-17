@@ -9,16 +9,32 @@ const SubscribeNow: React.FC<SubscribeNowProps> = ({ className = "" }) => {
   const [apiMessage, setApiMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
-  const handleEmailSubscriptionFunction = (e: React.FormEvent) => {
+  const handleEmailSubscriptionFunction = async (e: React.FormEvent) => {
     e.preventDefault();
     setApiMessage("");
     setIsLoading(true);
     
-    // Simulate API call - Replace with your actual API endpoint
-    setTimeout(() => {
+    try {
+      // Mailchimp API integration
+      const response = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      if (response.ok) {
+        setApiMessage("YOU'RE IN!");
+      } else {
+        setApiMessage("SIGN UP FAILED");
+      }
+    } catch (error) {
+      console.error('Subscription error:', error);
+      setApiMessage("SIGN UP FAILED");
+    } finally {
       setIsLoading(false);
-      setApiMessage("YOU'RE IN!");
-    }, 1000);
+    }
   };
 
   return (
