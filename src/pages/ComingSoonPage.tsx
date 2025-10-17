@@ -162,7 +162,7 @@ export default function ComingSoonPage() {
         <div className="wrap flex flex-col w-full relative">
           {/* Header Hero Section */}
           <div className="bg-image relative" style={{
-            backgroundImage: 'url(/assets/CS header.svg), url(/assets/coming soon-header.png)',
+            backgroundImage: 'url(/assets/mobile-coming.png)',
             backgroundColor: 'transparent',
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
