@@ -187,6 +187,19 @@
   .blur-box h2 {
     font-size: 11px !important; /* 10px + 1px for mobile only */
   }
+  
+  /* Mobile-specific border size reduction */
+  .blur-box {
+    border: 1.3px solid #000000 !important;
+  }
+  
+  .blur-box input[type="email"] {
+    border: 1.3px solid #000000 !important;
+  }
+  
+  .blur-box input[type="email"]:focus {
+    border: 1.3px solid #EB1C24 !important;
+  }
 }
 
 /* Desktop-specific email input width reduction */
