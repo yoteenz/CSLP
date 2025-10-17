@@ -234,7 +234,15 @@ export default function ComingSoonPage() {
   return (
     <div className="lading-page bg-[#7b7a78]">
       {/* Desktop Screen */}
-      <div className="bg-desktop flex flex-col relative">
+      <div className="bg-desktop flex flex-col relative" style={{
+        backgroundImage: 'url(/assets/CS desktop-background.webp)',
+        backgroundColor: '#e2e2e2',
+        backgroundSize: 'contain',
+        backgroundPosition: 'center top',
+        backgroundRepeat: 'no-repeat',
+        minHeight: '100vh',
+        height: 'auto'
+      }}>
         <div className="wrapWidth flex h-full">
         </div>
         <div className="absolute bottom-0 left-0 mb-[59px] w-[310px] z-10 ml-[92px]">
