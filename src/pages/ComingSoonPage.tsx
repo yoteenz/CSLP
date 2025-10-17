@@ -167,9 +167,10 @@ export default function ComingSoonPage() {
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
             backgroundPosition: 'center top',
-            height: 'calc(70vh + 15px)',
-            minHeight: '415px',
+            height: '70vh',
+            minHeight: '400px',
             transform: 'translateY(-15px)',
+            marginBottom: '-15px',
             zIndex: 1
           }}>
           </div>
