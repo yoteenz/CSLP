@@ -143,8 +143,8 @@
   /* Auto-adjust content for tablet */
   .blur-box h1:first-child,
   .blur-box h2 {
-    font-size: 8px !important; /* Further reduce text size for tablet to fit 2 lines */
-    line-height: 10px !important; /* Adjust line height */
+    font-size: 9px !important; /* Restore tablet text size */
+    line-height: 12px !important; /* Restore line height */
     padding: 0 4px !important; /* Add small padding to prevent overflow */
   }
   
