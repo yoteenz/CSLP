@@ -180,6 +180,19 @@
     font-size: 9px !important; /* Increase "SIGN UP" text size by 1px for tablet */
     margin-top: -6px !important; /* Move "SIGN UP" text upwards by 6px */
   }
+  
+  /* Tablet-specific border size reduction */
+  .blur-box {
+    border: 1.3px solid #000000 !important;
+  }
+  
+  .blur-box input[type="email"] {
+    border: 1.3px solid #000000 !important;
+  }
+  
+  .blur-box input[type="email"]:focus {
+    border: 1.3px solid #EB1C24 !important;
+  }
 }
 
 /* Mobile-specific text size increase */
