@@ -106,12 +106,12 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       }
       
       return res.status(400).json({ 
-        message: 'SIGN UP FAILED',
+        message: 'SIGN UP FAILED!',
         error: errorData.title || 'Unknown error'
       });
     }
   } catch (error) {
     console.error('Subscription error:', error);
-    return res.status(500).json({ message: 'Internal server error' });
+    return res.status(500).json({ message: 'SIGN UP FAILED!' });
   }
 }
