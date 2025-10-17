@@ -200,6 +200,12 @@
   .blur-box input[type="email"]:focus {
     border: 1.3px solid #EB1C24 !important;
   }
+  
+  /* Mobile-specific email input spacing */
+  .blur-box input[type="email"] {
+    margin-top: 4px !important;
+    margin-bottom: 4px !important;
+  }
 }
 
 /* Desktop-specific email input width reduction */
