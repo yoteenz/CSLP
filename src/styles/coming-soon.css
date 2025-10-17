@@ -179,6 +179,7 @@
     padding: 4px 8px !important; /* Reduce input padding - smaller height */
     font-size: 9px !important; /* Decrease input text size by 1px (was 10px) */
     height: 25px !important; /* Reduce input box height */
+    margin-top: 3px !important; /* Add spacing above email input box */
   }
   
   .blur-box button {
