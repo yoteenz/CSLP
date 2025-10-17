@@ -39,15 +39,6 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   }
 
   try {
-    // First, validate if email actually exists and is deliverable
-    const emailValidation = await validateEmail(email);
-    if (!emailValidation.valid) {
-      return res.status(400).json({ 
-        message: 'THIS EMAIL DOESN\'T EXIST!',
-        error: 'invalid_email'
-      });
-    }
-
     // Mailchimp API configuration
     const MAILCHIMP_API_KEY = process.env.MAILCHIMP_API_KEY;
     const MAILCHIMP_LIST_ID = process.env.MAILCHIMP_LIST_ID;
@@ -102,6 +93,15 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         return res.status(400).json({ 
           message: 'THIS EMAIL ALREADY EXISTS!',
           error: 'duplicate'
+        });
+      }
+      
+      // If it's not a duplicate, check if email domain is valid
+      const emailValidation = await validateEmail(email);
+      if (!emailValidation.valid) {
+        return res.status(400).json({ 
+          message: 'THIS EMAIL DOESN\'T EXIST!',
+          error: 'invalid_email'
         });
       }
       
