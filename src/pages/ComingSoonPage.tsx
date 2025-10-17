@@ -237,7 +237,7 @@ export default function ComingSoonPage() {
       <div className="bg-desktop flex flex-col relative" style={{
         backgroundImage: 'url(/assets/CS desktop-background.webp)',
         backgroundColor: '#e2e2e2',
-        backgroundSize: '100% 100%',
+        backgroundSize: '120%',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         minHeight: '100vh',
