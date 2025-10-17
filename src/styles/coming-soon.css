@@ -185,7 +185,7 @@
 @media (max-width: 767px) {
   .blur-box h1:first-child,
   .blur-box h2 {
-    font-size: 11px !important; /* 10px + 1px for mobile only */
+    font-size: 12px !important; /* 10px + 2px for mobile only (was 11px, now 12px) */
   }
   
   /* Mobile-specific border size reduction */
