@@ -163,9 +163,18 @@
     display: none !important; /* Hide the line break on tablet */
   }
   
-  /* Remove line break after "updates," in black text on tablet */
+  /* Remove line break after "updates," in black text on tablet and add space */
   .blur-box h2 br {
     display: none !important; /* Hide the line break after "updates," on tablet */
+  }
+  
+  /* Add space after "updates," for tablet design */
+  .blur-box h2 {
+    white-space: pre-line !important; /* Allow line breaks but preserve spaces */
+  }
+  
+  .blur-box h2::before {
+    content: "" !important; /* Ensure proper spacing */
   }
   
   .blur-box h1.font-covered {
