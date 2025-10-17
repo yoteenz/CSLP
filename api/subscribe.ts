@@ -1,5 +1,32 @@
 import { VercelRequest, VercelResponse } from '@vercel/node';
 
+// Email validation function
+async function validateEmail(email: string): Promise<{ valid: boolean; reason?: string }> {
+  try {
+    // Basic email format validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      return { valid: false, reason: 'Invalid email format' };
+    }
+
+    // Extract domain from email
+    const domain = email.split('@')[1].toLowerCase();
+    
+    // Check if domain exists using DNS lookup
+    const dns = require('dns').promises;
+    try {
+      await dns.resolveMx(domain);
+      return { valid: true };
+    } catch (dnsError) {
+      // If MX record doesn't exist, email domain is invalid
+      return { valid: false, reason: 'Email domain does not exist' };
+    }
+  } catch (error) {
+    console.error('Email validation error:', error);
+    return { valid: false, reason: 'Validation failed' };
+  }
+}
+
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (req.method !== 'POST') {
     return res.status(405).json({ message: 'Method not allowed' });
@@ -12,6 +39,15 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   }
 
   try {
+    // First, validate if email actually exists and is deliverable
+    const emailValidation = await validateEmail(email);
+    if (!emailValidation.valid) {
+      return res.status(400).json({ 
+        message: 'THIS EMAIL DOESN\'T EXIST!',
+        error: 'invalid_email'
+      });
+    }
+
     // Mailchimp API configuration
     const MAILCHIMP_API_KEY = process.env.MAILCHIMP_API_KEY;
     const MAILCHIMP_LIST_ID = process.env.MAILCHIMP_LIST_ID;
