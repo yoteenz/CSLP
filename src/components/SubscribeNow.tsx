@@ -27,7 +27,8 @@ const SubscribeNow: React.FC<SubscribeNowProps> = ({ className = "" }) => {
       if (response.ok) {
         setApiMessage("YOU'RE IN!");
       } else {
-        setApiMessage("SIGN UP FAILED");
+        const errorData = await response.json();
+        setApiMessage(errorData.message || "SIGN UP FAILED");
       }
     } catch (error) {
       console.error('Subscription error:', error);

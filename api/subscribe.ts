@@ -58,8 +58,19 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         statusText: response.statusText,
         error: errorData
       });
+      
+      // Check if email already exists
+      if (errorData.title === 'Member Exists' || 
+          errorData.detail?.includes('already a list member') ||
+          errorData.detail?.includes('already exists')) {
+        return res.status(400).json({ 
+          message: 'THIS EMAIL ALREADY EXISTS!',
+          error: 'duplicate'
+        });
+      }
+      
       return res.status(400).json({ 
-        message: 'Subscription failed',
+        message: 'SIGN UP FAILED',
         error: errorData.title || 'Unknown error'
       });
     }
