@@ -261,13 +261,17 @@
   will-change: auto !important;
   image-rendering: auto !important;
   image-orientation: none !important;
-  image-rendering: pixelated !important;
-  image-rendering: -moz-crisp-edges !important;
-  image-rendering: crisp-edges !important;
+  image-rendering: smooth !important;
+  image-rendering: -webkit-optimize-contrast !important;
+  image-rendering: optimize-quality !important;
+  image-rendering: high-quality !important;
+  image-rendering: -webkit-optimize-quality !important;
   transform-origin: 0 0 !important;
   scale: 1 !important;
   rotate: 0deg !important;
   translate: 0 0 !important;
+  filter: none !important;
+  -webkit-filter: none !important;
 }
 
 /* Font Styles */
