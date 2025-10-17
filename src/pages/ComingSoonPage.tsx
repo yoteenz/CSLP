@@ -219,7 +219,7 @@ export default function ComingSoonPage() {
         }}>
           <div className="tablet-card-position" style={{
             position: 'absolute',
-            bottom: '72px',
+            bottom: '82px',
             left: 'calc(50% - 100px)',
             transform: 'translateX(0)'
           }}>
