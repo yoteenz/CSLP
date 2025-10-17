@@ -169,8 +169,8 @@ export default function ComingSoonPage() {
             backgroundPosition: 'center top',
             height: '70vh',
             minHeight: '400px',
-            transform: 'translateY(-15px)',
-            marginBottom: '-15px',
+            transform: 'translateY(-25px)',
+            marginBottom: '-25px',
             zIndex: 1
           }}>
           </div>
