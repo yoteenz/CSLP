@@ -186,6 +186,7 @@
   .blur-box h1:first-child,
   .blur-box h2 {
     font-size: 12px !important; /* 10px + 2px for mobile only (was 11px, now 12px) */
+    line-height: 15px !important; /* 14px + 1px for mobile only */
   }
   
   /* Mobile-specific border size reduction */
